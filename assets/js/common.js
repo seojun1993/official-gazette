@@ -82,18 +82,21 @@ $(document).ready(function(){
 document.addEventListener('DOMContentLoaded', function() {
     // 탑버튼이 브라우저 화면높이 넘으면 나오게 하자
     const topBtn = document.querySelector('.top_btn');
-    function toggleTopBtn() {
-        if (window.scrollY > window.innerHeight) {
-            topBtn.style.display = 'block';
-        } else {
-            topBtn.style.display = 'none';
+    
+    // topBtn이 존재할 때만 실행
+    if (topBtn) {
+        function toggleTopBtn() {
+            if (window.scrollY > window.innerHeight) {
+                topBtn.style.display = 'block';
+            } else {
+                topBtn.style.display = 'none';
+            }
         }
-    }
-    // 초기 상태 설정
-    toggleTopBtn();
-    window.addEventListener('scroll', toggleTopBtn);
-    window.addEventListener('resize', toggleTopBtn);
-    topBtn.querySelector('a').addEventListener('click', function() {
+        // 초기 상태 설정
+        toggleTopBtn();
+        window.addEventListener('scroll', toggleTopBtn);
+        window.addEventListener('resize', toggleTopBtn);
+        topBtn.querySelector('a').addEventListener('click', function() {
         function smoothScrollToTop(duration = 500) {
             const start = window.scrollY || window.pageYOffset;
             const startTime = performance.now();
@@ -114,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         smoothScrollToTop(500);
-    });
+        });
+    }
 });
 

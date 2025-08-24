@@ -114,7 +114,240 @@ header{
 .state_section{
     width: 100%;
     padding: 7rem 0;
+    background-color: #F1F0ED;
 }
+
+.state_section .main_state{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.state_section .main_state .state_top{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.state_section .main_state .state_top h3{
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.state_section .main_state .state_top a{
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+    font-size: var(--font-size-17);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+}
+
+.state_section .main_state .state_top a img{
+    margin-bottom: 0.4rem;
+}
+
+  /* 컨트롤 버튼 */
+  .timeline-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-prev,
+  .timeline-next,
+  .timeline-play-pause {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+
+  .timeline-play-pause{
+    padding-top: 0.4rem;
+  }
+  
+.timeline-wrapper {
+    position: relative;
+    padding-top: 4.8rem;
+  }
+  
+  .timeline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .timeline-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-group[data-group="0"] {
+    width: calc(1200px * 2 / 5); /* 2개 아이템 = 480px */
+  }
+  
+  .timeline-group[data-group="1"] {
+    width: calc(1200px * 2 / 5); /* 2개 아이템 = 480px */
+  }
+  
+  .timeline-group[data-group="2"] {
+    width: calc(1200px * 1 / 5); /* 1개 아이템 = 240px */
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px; /* 각 아이템 240px 고정 */
+    z-index: 2;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    bottom: -7px; /* 점이 라인 중앙에 오도록 조정 */
+    left: 0; /* 왼쪽 끝에 붙임 */
+    transform: translateX(-50%); /* 점의 중앙을 왼쪽 끝에 맞춤 */
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border: 1px solid #A3ABB2;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .timeline-dot.active {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    transform: translateX(-50%);
+    box-shadow:
+      0 0 0 4px #fff, /* 4px 여백(배경색) */
+      0 0 0 6px var(--color-primary); /* 4px 바깥부터 색상 채움 */
+  }
+  
+  .timeline-content {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%; /* 영역 전체 사용 */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    position: relative; /* 위치 조정을 위해 */
+  }
+
+  .timeline-item{
+    border-bottom: 1px solid #A3ABB2;
+  }
+
+  .timeline-item.active{
+    border: none;
+  }
+
+
+  /* 액티브 아이템 아래 점선으로 덮어쓰기 */
+  .timeline-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    border-bottom: 2px dashed var(--color-primary);
+    z-index: 2;
+  }
+  
+  .timeline-title {
+    font-size: var(--font-size-17);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    text-align: center;
+  }
+  
+  .timeline-period {
+    font-size: var(--font-size-15);
+    color: var(--color-primary);
+    text-align: center;
+    height: 42px;
+  }
+  
+  /* 하단 상세 내용 영역 */
+  .state_detail {
+    margin-top: 8rem;
+    position: relative;
+    background-color: #fff;
+    padding: 4.5rem;
+    box-sizing: border-box;
+  }
+
+  /* 모바일용 하단 내용은 기본적으로 숨김 */
+  .state_detail.mobile {
+    display: none;
+  }
+  
+  .state_item {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    gap: 5.6rem;
+
+  }
+  
+  .state_item.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    align-items: center;
+  }
+  
+  .state_image {
+    flex: 0 0 300px;
+  }
+  
+  .state_image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03);
+  }
+  
+  .state_info {
+    flex: 1;
+  }
+  
+  .state_info img {
+    width: auto;
+    height: 60px;
+  }
+  
+  .state_info p {
+    font-size: var(--font-size-16);
+    color: #444;
+    line-height: 2.3rem;
+    margin-top: 2.4rem;
+  }
+  
+  .state_info strong {
+    color: #007bff;
+    font-weight: bold;
+  }
 
 @media (max-width: 1024px) {
     /* 메인 */
@@ -144,7 +377,132 @@ header{
         line-height: 44px;
         border-radius: 6px;
     }
+
+    .state_section{
+        padding: 3.2rem 2.4rem;
+    }
+
+    .timeline-wrapper{padding-top: 1.6rem;}
+
+    .timeline-section{
+        flex-wrap:nowrap;
+    }
+
+    .timeline-group[data-group="0"]{width: 100%;}
   
-    /* 소장 현황 */
-    .state_section { height: 160px; } /* 280 → 160 */
-  }
+    /* 소장 현황 타임라인 반응형 */
+    .timeline-container {
+      max-width: 100%;
+      gap: 0;
+    }
+
+    .timeline-period{
+        font-size: 1.5rem;
+    }
+    
+    .timeline-group[data-group="0"] {
+      width: 40%; /* 2개 아이템 = 40% */
+    }
+    
+    .timeline-group[data-group="1"] {
+      width: 40%; /* 2개 아이템 = 40% */
+    }
+    
+    .timeline-group[data-group="2"] {
+      width: 20%; /* 1개 아이템 = 20% */
+    }
+    
+    .timeline-item {
+      width: 50%; /* 그룹 내에서 아이템별 50% (2개일 때) */
+    }
+    
+    .timeline-group[data-group="2"] .timeline-item {
+      width: 100%; /* 마지막 그룹은 1개이므로 100% */
+    }
+    
+    .timeline-content {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    /* PC/모바일 하단 내용 전환 */
+    .state_detail.pc {
+      display: none;
+    }
+
+    .section_bottom{
+        position: relative;
+    }
+
+    .state_section .main_state{
+        position: unset;
+    }
+
+    .timeline-controls{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .timeline-prev{
+        position: absolute;
+        left:-24px;
+    } 
+
+    .timeline-play-pause{
+        display: none;
+    }
+
+    .timeline-next{
+        position: absolute;
+        right:-24px;
+    }
+
+    
+    .state_detail.mobile {
+      display: block;
+      margin-top: 3.2rem;
+      padding: 0;
+      background: none;
+    }
+
+    .state_detail.mobile .state_item.active {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.6rem;
+    }
+
+    .state_detail.mobile .state_image{
+        flex: 0 0 100%;
+        padding: 0 2.4rem;
+    }
+    .state_detail.mobile .state_info h4 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .state_detail.mobile .state_info .logo_box{
+        background-color: #fff;
+        width: auto;
+        max-width: 136px;
+        padding: 10px 20px;
+        margin: 0.8rem auto 0;
+        border-radius: 6px;   
+    }
+
+    .state_detail.mobile .state_info .logo_box img{
+        display: block;
+        width: auto;
+        max-height: 32px;
+    }
+
+    .state_detail.mobile .state_info p {
+      font-size: var(--font-size-15);
+    }
+}
