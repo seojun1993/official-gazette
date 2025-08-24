@@ -18,11 +18,10 @@
     <script src="assets/js/pages/overview.js"></script>
 </head>
 <body>
-    <!-- 스킵 네비게이션 -->
     <div id="skip-navigation">
         <a href="#main-content">본문 바로가기</a>
         <a href="#main-menu">메인메뉴 바로가기</a>
-        <a href="#gazette-info">간행물 정보 바로가기</a>
+        <a href="#gazette-info">관보 정보 바로가기</a>
     </div>
  
     <div class="wrap">
@@ -43,50 +42,19 @@
 
           <nav id="main-menu" role="navigation" aria-label="메인 네비게이션">
             <div class="mobile_top">
-              <img src="images/logo_b.svg" alt="정부간행물 로고">
+              <img src="images/logo_b.svg" alt="관보 로고">
               <button class="close_btn" aria-label="메인메뉴 닫기"></button>
             </div>
             <ul>
-              <li class="active"><a href="intro.html" aria-label="간행물 검색 페이지로 이동">간행물</a></li>
-              <li><a href="search.html" aria-label="상세검색 페이지로 이동">상세검색</a></li>
               <li class="has-submenu">
-                <a href="organList.html" aria-label="발행기관별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">발행기관별 검색</a>
+                <a href="overview.html" aria-label="관보 소개 페이지로 이동" aria-haspopup="true" aria-expanded="false">관보 소개</a>
                 <ul class="submenu" aria-label="발행기관별 하위 메뉴">
-                  <li><a href="#">국가행정조직</a></li>
-                  <li><a href="#">자치행정조직</a></li>
-                  <li><a href="#">교육행정조직</a></li>
-                  <li><a href="#">입법조직</a></li>
-                  <li><a href="#">정부투자기관 및 기타</a></li>
-                  <li><a href="#">산하기관</a></li>
-                  <li><a href="#">위원회</a></li>
-                  <li><a href="#">초등학교</a></li>
-                  <li><a href="#">중학교</a></li>
-                  <li><a href="#">고등학교</a></li>
-                  <li><a href="#">고등교육기관</a></li>
-                  <li><a href="#">사법기관</a></li>
-                  <li><a href="#">헌법기관</a></li>
-                  <li><a href="#">미분류</a></li>
+                  <li><a href="overview.html" aria-label="관보 개요 페이지로 이동">개요</a></li>
+                  <li><a href="history.html" aria-label="관보 역사 페이지로 이동">역사</a></li>
+                  <li><a href="collection.html" aria-label="관보 소장현황 페이지로 이동">소장현황</a></li>
                 </ul>
               </li>
-              <li class="has-submenu">
-                <a href="type_list.html" aria-label="유형별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">유형별 검색</a>
-                <ul class="submenu" aria-label="유형별 하위 메뉴">
-                  <li><a href="#">연감·백서류</a></li>
-                  <li><a href="#">통계집</a></li>
-                  <li><a href="#">업무편람</a></li>
-                  <li><a href="#">법규집</a></li>
-                  <li><a href="#">사업보고서</a></li>
-                  <li><a href="#">연구조사보고서</a></li>
-                  <li><a href="#">교육자료</a></li>
-                  <li><a href="#">기관지</a></li>
-                  <li><a href="#">회의자료</a></li>
-                  <li><a href="#">목록류</a></li>
-                  <li><a href="#">사료연혁집</a></li>
-                  <li><a href="#">연설·강연집</a></li>
-                  <li><a href="#">전시·도감·화보집</a></li>
-                  <li><a href="#">업무안내질의서</a></li>
-                </ul>
-              </li>
+              <li><a href="search.html" aria-label="관보 검색 페이지로 이동">관보 검색</a></li>
             </ul>
           </nav>
       </div>
@@ -119,9 +87,9 @@
               <nav class="gazette_nav">
                 <div class="container">
                     <ul>
-                        <li class="active"><a href="#;">개요</a></li>
-                        <li><a href="#;">역사</a></li>
-                        <li><a href="#;">소장현황</a></li>
+                        <li class="active"><a href="overview.html">개요</a></li>
+                        <li><a href="history.html">역사</a></li>
+                        <li><a href="collection.html">소장현황</a></li>
                     </ul>
                 </div>
             </nav>
@@ -355,8 +323,6 @@
                                     <li>17. 기타</li>
                                 </ul>
                             </div>
-
-                            <!-- 2003.2.11 -->
                             <div class="classification_item">
                                 <div class="classification_title">
                                     <h4>관보규정 제정</h4>
@@ -384,8 +350,6 @@
                                     <li>18. 기타</li>
                                 </ul>
                             </div>
-
-                            <!-- 2011.8.3 -->
                             <div class="classification_item">
                                 <div class="classification_title">
                                     <h4>관보규정 제정</h4>
@@ -458,6 +422,13 @@
             </div>
           </div>
         </footer>
+
+        <div class="top_btn">
+          <a href="#top">
+            <img src="images/top.svg" alt="맨 위로 이동">
+            <span>위로</span>
+          </a>
+        </div>
       </div>
 </body>
 </html>

@@ -4,8 +4,8 @@ header {
     position: relative;
     background-color: var(--color-white);
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    z-index: 100;
     height: 80px;
+    z-index: 500;
 }
 
 header .container{
@@ -55,6 +55,37 @@ header .container nav ul li.active a{
 
 header .container nav ul li.has-submenu > a{
     position: relative;
+}
+
+.top_btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+.top_btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    background-color:rgba(59,74,89,0.7);
+    border-radius: 4px;
+}
+
+.top_btn a span{
+    display: block;
+    text-align: center;
+    font-size: var(--font-size17);
+    color: #fff;
+}
+
+.top_btn a img{
+    width: 25px;
+    height: 24px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
@@ -443,6 +474,10 @@ footer .container .footer_logo img{
     main{
         width: 100%;
     }
+
+    .gazette_nav{
+        display: none;
+    }
     
     .main_section {
         position: relative;
@@ -566,4 +601,18 @@ footer .container .footer_logo img{
         overflow-x: hidden;
         overflow-y: auto;
     }
+
+    .top_btn{
+        bottom: 24px;
+        right: 32px;
+    }
+
+    .top_btn a{
+        width: 48px;
+        height: 48px;
+    }
+    
+    .top_btn a span{
+        display: none;
+    } 
 }

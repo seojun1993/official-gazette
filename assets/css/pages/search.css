@@ -378,22 +378,11 @@
     .detail_search_section .detail_search_title {
         width: 70px;
         text-align: center;
-      /* width: 100%;
-      display: block;
-      background-color: transparent;
-      margin-bottom: 0.8rem; */
     }
     .detail_search_section .detail_search_title span { display: inline-block; text-align: center; }
-    .detail_search_section .detail_search_title button {
-      /* display: inline-block;
-      width: auto;
-      vertical-align: middle; */
-    }
   
     .detail_search_section .detail_search_content { padding: 0; width: 100%; padding: 1.6rem 1rem;}
-    /* .detail_search_section .detail_search_item:not(:last-of-type) { margin-bottom: 2rem; } */
   
-    /* 키워드 검색: 2열 + 하단 입력 */
     .detail_search_section .keyword_search {
       height: auto;
       flex-wrap: wrap;
@@ -404,12 +393,11 @@
         height: 38px;
     }
     .detail_search_section .keyword_search select:nth-of-type(1){
-        width: auto;
-        /* width: 100%; */
+        width: 120px;
     }
 
     .detail_search_section .keyword_search input {
-      width: calc(100% - 120px);
+      width: calc(100% - 120px - 0.8rem);
       height: 38px;
     }
     .detail_search_section .keyword_search:not(:first-of-type) { margin-top: 0.8rem; }

@@ -77,3 +77,43 @@ $(document).ready(function(){
         $('#allCheck').prop('checked', total === checked);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 탑버튼이 브라우저 화면높이 넘으면 나오게 하자
+    const topBtn = document.querySelector('.top_btn');
+    function toggleTopBtn() {
+        if (window.scrollY > window.innerHeight) {
+            topBtn.style.display = 'block';
+        } else {
+            topBtn.style.display = 'none';
+        }
+    }
+    // 초기 상태 설정
+    toggleTopBtn();
+    window.addEventListener('scroll', toggleTopBtn);
+    window.addEventListener('resize', toggleTopBtn);
+    topBtn.querySelector('a').addEventListener('click', function() {
+        function smoothScrollToTop(duration = 500) {
+            const start = window.scrollY || window.pageYOffset;
+            const startTime = performance.now();
+
+            function scrollStep(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const ease = 0.5 - Math.cos(progress * Math.PI) / 2; // easeInOut
+
+                window.scrollTo(0, start * (1 - ease));
+
+                if (progress < 1) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+
+            requestAnimationFrame(scrollStep);
+        }
+
+        smoothScrollToTop(500);
+    });
+});
+
