@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="국가기록원 정부간행물 검색 서비스 - 국가, 지방자치단체 및 공공기관의 간행물을 검색할 수 있습니다.">
+    <meta name="keywords" content="정부간행물, 국가기록원, 공공기관, 간행물검색, 정부문서">
+    <meta name="author" content="국가기록원">
+    <meta name="robots" content="index, follow">
+    
+    <title>관보 - 국가기록원</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="stylesheet" href="assets/css/lib/swiper-bundle.min.css">
+
+    <script src="assets/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <!-- 스킵 네비게이션 -->
+    <div id="skip-navigation">
+        <a href="#main-content">본문 바로가기</a>
+        <a href="#main-menu">메인메뉴 바로가기</a>
+        <a href="#search-form">검색 바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+      <!-- 로딩 이거 쓰시면 됩니다. -->
+        <div class="loading" aria-hidden="true">
+          <div class="loading_inner">
+            <div class="loader" aria-label="로딩 중"></div>
+            <p>검색 중입니다.</p>
+          </div>
+          <div class="overlay"></div>
+      </div>
+
+        <header role="banner">
+          <div class="container">
+            <div class="header_logo">
+              <h1>
+                <a href="index.html" aria-label="관보 홈으로 이동">
+                  <span class="sr-only">관보</span>
+                </a>
+              </h1>
+            </div>
+            <button class="toggle_btn" aria-label="메인메뉴 열기" aria-expanded="false" aria-controls="main-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <nav id="main-menu" role="navigation" aria-label="메인 네비게이션">
+              <div class="mobile_top">
+                <img src="images/logo_b.svg" alt="관보 로고">
+                <button class="close_btn" aria-label="메인메뉴 닫기"></button>
+              </div>
+              <ul>
+                <li class="has-submenu">
+                  <a href="organList(발행기관별검색).html" aria-label="관보 소개 페이지로 이동" aria-haspopup="true" aria-expanded="false">관보 소개</a>
+                  <ul class="submenu" aria-label="발행기관별 하위 메뉴">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">역사</a></li>
+                    <li><a href="#">소장현황</a></li>
+                  </ul>
+                </li>
+                <li><a href="search(상세검색).html" aria-label="관보 검색 페이지로 이동">관보 검색</a></li>
+              </ul>
+            </nav>
+        </div>
+        </header>
+    
+        <main id="main-content" role="main">
+            <section aria-labelledby="main-title" class="main_section">
+              <div class="container">
+                <div class="section_top">
+                  <div class="title_section">
+                      <h2 id="main-title-img">
+                        <img src="images/main_txt.svg" alt="관보">
+                      </h2>
+                      <p>‘관보’란 정부가 국민들에게 널리 알릴 사항을<br class="mobile"/> 편찬하여 간행하는 국가의 공고기관지입니다.</p>
+                  </div>
+                  <div class="search_wrap" role="search">
+                      <form id="search-form" action="#" method="get"> 
+                        <div class="search">
+                          <div class="search_box">
+                            <select name="" id="search-type">
+                              <option value="통합검색" selected>통합검색</option>
+                              <option value="고시물">고시물</option>
+                              <option value="관보호수">관보호수</option>
+                              <option value="고시호수">고시호수</option> 
+                            </select>
+                            <div class="search_input">
+                              <label for="search-input" class="sr-only">검색어 입력</label>
+                              <input type="text" id="search-input" name="search" aria-describedby="search-description">
+                              <input type="submit" class="btn" value="검색"aria-label="정부간행물 검색 실행">
+                            </div>
+                          </div>
+                          <a href="search(상세검색).html" class="btn" aria-label="정부간행물 검색 실행">상세 검색</a>
+                        </div>
+                      </form>
+                      <p id="search-description" class="sr-only">정부간행물을 검색할 수 있습니다. 검색어를 입력하고 검색 버튼을 누르거나 엔터키를 누르세요.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section aria-labelledby="related-orgs-title" class="state_section">
+              <div class="container">
+                <div class="section_bottom"> 
+                    <div class="main_state">
+                        <h3 id="related-orgs-title">소장 현황
+                          <a href="#;">
+                            <img src="images/plus.svg" alt="소장현황 바로가기">
+                            더보기
+                          </a>
+                        </h3>
+                        <div class="state_content">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide state_item">
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="container">
+            <address class="footer_info">
+              <p>(우) 35208 대전광역시 서구 청사로 189, 2동(국가기록원)</p>
+              <p>서울 02-720-2721 / 성남 031-750-2008,2002 / 대전 042-481-6300 / 부산 051-550-8023 / 광주 062-975-5791</p>
+              <p>Copyright(c) National Archives of Korea all rights reserved.</p>
+            </address>
+            <div class="footer_logo">
+              <a href="https://www.archives.go.kr/next/viewMainNew.do" target="_blank" rel="noopener noreferrer" aria-label="국가기록원 홈페이지 새창으로 열기">
+                <img src="images/footer_logo.svg" alt="국가기록원 로고" width="131" height="44">
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

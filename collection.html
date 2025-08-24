@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="국가기록원 정부간행물 소개 - 간행물의 정의, 유형, 활용방법에 대한 상세 정보를 제공합니다.">
+    <meta name="keywords" content="정부간행물, 국가기록원, 간행물소개, 간행물유형, 공공기관">
+    <meta name="author" content="국가기록원">
+    <meta name="robots" content="index, follow">
+
+    <title>관보 소개 - 국가기록원</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages/collection.css">
+
+    <script src="assets/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/pages/history.js"></script>
+</head>
+<body>
+    <!-- 스킵 네비게이션 -->
+    <div id="skip-navigation">
+        <a href="#main-content">본문 바로가기</a>
+        <a href="#main-menu">메인메뉴 바로가기</a>
+        <a href="#gazette-info">간행물 정보 바로가기</a>
+    </div>
+
+    <div class="wrap">
+        <header role="banner">
+            <div class="container">
+                <div class="header_logo">
+                    <h1>
+                        <a href="index.html" aria-label="관보 홈으로 이동">
+                            <span class="sr-only">관보</span>
+                        </a>
+                    </h1>
+                </div>
+                <button class="toggle_btn" aria-label="메인메뉴 열기" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="main-menu" role="navigation" aria-label="메인 네비게이션">
+                    <div class="mobile_top">
+                        <img src="images/logo_b.svg" alt="정부간행물 로고">
+                        <button class="close_btn" aria-label="메인메뉴 닫기"></button>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="intro.html" aria-label="간행물 검색 페이지로 이동">간행물</a>
+                        </li>
+                        <li>
+                            <a href="search.html" aria-label="상세검색 페이지로 이동">상세검색</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="organList.html" aria-label="발행기관별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">발행기관별 검색</a>
+                            <ul class="submenu" aria-label="발행기관별 하위 메뉴">
+                                <li><a href="#">국가행정조직</a></li>
+                                <li><a href="#">자치행정조직</a></li>
+                                <li><a href="#">교육행정조직</a></li>
+                                <li><a href="#">입법조직</a></li>
+                                <li><a href="#">정부투자기관 및 기타</a></li>
+                                <li><a href="#">산하기관</a></li>
+                                <li><a href="#">위원회</a></li>
+                                <li><a href="#">초등학교</a></li>
+                                <li><a href="#">중학교</a></li>
+                                <li><a href="#">고등학교</a></li>
+                                <li><a href="#">고등교육기관</a></li>
+                                <li><a href="#">사법기관</a></li>
+                                <li><a href="#">헌법기관</a></li>
+                                <li><a href="#">미분류</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="type_list.html" aria-label="유형별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">유형별 검색</a>
+                            <ul class="submenu" aria-label="유형별 하위 메뉴">
+                                <li><a href="#">연감·백서류</a></li>
+                                <li><a href="#">통계집</a></li>
+                                <li><a href="#">업무편람</a></li>
+                                <li><a href="#">법규집</a></li>
+                                <li><a href="#">사업보고서</a></li>
+                                <li><a href="#">연구조사보고서</a></li>
+                                <li><a href="#">교육자료</a></li>
+                                <li><a href="#">기관지</a></li>
+                                <li><a href="#">회의자료</a></li>
+                                <li><a href="#">목록류</a></li>
+                                <li><a href="#">사료연혁집</a></li>
+                                <li><a href="#">연설·강연집</a></li>
+                                <li><a href="#">전시·도감·화보집</a></li>
+                                <li><a href="#">업무안내질의서</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content" role="main">
+            <section class="main_section" aria-labelledby="main-title">
+                <nav class="bread_crumb" aria-label="페이지 경로">
+                    <div class="container">
+                        <ol class="bread_crumb_list">
+                            <li>
+                                <a href="index.html">
+                                    <img src="images/home.svg" alt="" aria-hidden="true">
+                                    <span class="sr-only">홈</span>
+                                </a>
+                            </li>
+                            <li><a href="intro.html">관보소개</a></li>
+                            <li aria-current="page">소장현황</li>
+                        </ol>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="section_top">
+                        <div class="title_section">
+                            <h2 id="main-title">관보 소개</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="gazette_nav">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#;">개요</a></li>
+                            <li><a href="#;">역사</a></li>
+                            <li class="active"><a href="">소장현황</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+
+            <section id="gazette-info" class="gazette_section" aria-labelledby="gazette-info-title">
+                <div class="container">
+                    <div class="section_bottom">
+                        <div class="gazette_info">
+                            <h3 id="collection-status-title">소장현황</h3>
+
+                            <div class="gazette_table">
+                                <div class="gazette_table_content">
+                                    <div class="sub_title">
+                                        <h4>미군정기</h4>
+                                    </div>
+                                    <div class="gazette_table_wrapper">
+                                        <table>
+                                            <caption class="sr-only">미군정기 - 기간, 발행기관, 호수로 구성된 표</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">1945~1948</th>
+                                                    <th scope="col">합계</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>관보</td>
+                                                    <td>2롤(M/F)</td>
+                                                    <td>2롤</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+    
+                                <div class="gazette_table_content">
+                                    <div class="sub_title">
+                                        <h4>정부수립 이후</h4>
+                                    </div>
+                                    <div class="gazette_table_wrapper">
+                                        <table>
+                                            <caption class="sr-only">정부수립 이후 - 기간, 발행기관, 호수로 구성된 표</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">1948~1949</th>
+                                                    <th scope="col">1950년대</th>
+                                                    <th scope="col">1960년대</th>
+                                                    <th scope="col">1970년대</th>
+                                                    <th scope="col">1980년대</th>
+                                                    <th scope="col">1990년대</th>
+                                                    <th scope="col">2000년대</th>
+                                                    <th scope="col">2001년대</th>
+                                                    <th scope="col">합계</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>관보1</td>
+                                                    <td>265</td>
+                                                    <td>2,405</td>
+                                                    <td>3,005</td>
+                                                    <td>2,985</td>
+                                                    <td>2,981</td>
+                                                    <td>3,003</td>
+                                                    <td>297</td>
+                                                    <td>298</td>
+                                                    <td>15,239</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>관보1외</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>3,005</td>
+                                                    <td>1</td>
+                                                    <td>4</td>
+                                                    <td>91</td>
+                                                    <td>4</td>
+                                                    <td>4</td>
+                                                    <td>114</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>월간목록</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>72</td>
+                                                    <td>12</td>
+                                                    <td></td>
+                                                    <td>84</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>조달관보</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>131</td>
+                                                    <td>248</td>
+                                                    <td>282</td>
+                                                    <td>661</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>합계</td>
+                                                    <td>265</td>
+                                                    <td>2,405</td>
+                                                    <td>3,005</td>
+                                                    <td>2,986</td>
+                                                    <td>2,995</td>
+                                                    <td>3,297</td>
+                                                    <td>561</td>
+                                                    <td>584</td>
+                                                    <td>16,098</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gazette_info">
+                            <h3 id="disclosure-status-title">공개현황</h3>
+                            <div class="content_section">
+                                <p>
+                                    관보는 국민에게 정부의 소식을 알리는 소식지로서 누구에게나 공개하고 있습니다. 국가기록원에서는 관보의 원문을 온라인에서 서비스하고 있으며, 자유롭게 출력할 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="gazette_info">
+                            <h3 id="service-target-title">서비스 대상</h3>
+                            <div class="content_section">
+                                <p><strong>1894년 ~ 1910년</strong> : 구한국(舊韓國) 관</p>
+                                <p><strong>1910년 ~ 1945년</strong> : 조선총독부 관보(국립중앙도서관 연계)</p>
+                                <p><strong>1945년 ~ 1948년 </strong> : 미군정청 관보</p>
+                                <p><strong>1948년 ~ 2000년</strong> : 대한민국 관보</p>
+                                <p><strong>2000년 ~ 현재</strong> : 대한민국 전자관보(행정안전부 전자관보 연계)</p>
+                                <p>* 국립중앙도서관은 구한국 관보+조선총독부 관보 / 행정안전부 전자관보는 대한민국 전자관보</p>
+                            </div>
+                        </div>
+
+                        <div class="gazette_info">
+                            <h3 id="related-organizations-title">관련 기관</h3>
+                            <div class="content_section">
+                                <div class="link_box">
+                                    <img src="images/collection/link_logo01.png" alt="국립중앙도서관 로고">
+                                    <p>1894년부터 1945년까지 발행한 구한국(舊韓國) 관보 및 조선총독부 관보를 제공합니다. 공시사항은 텍스트로 원문정보는 이미지로 볼 수 있습니다. 국립중앙도서관의 이용가능한 관보는 164종이며, 147,133면의 기사를 제공하고 있습니다.</p>
+                                </div>
+                                <div class="link_box">
+                                    <img src="images/collection/link_logo02.png" alt="행정안전부 로고">
+                                    <p>2001년 1월부터 현재까지 행정안전부 법무담당관실에서 발행하는 모든 종류의 관보를 검색할 수 있습니다. '오늘의 관보'에서는 관보의 전문을 모두 열람할 수 있고, '내일·모레의 관보'는 목차로 제공합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <div class="container">
+                <address class="footer_info">
+                    <p>(우) 35208 대전광역시 서구 청사로 189, 2동(국가기록원)</p>
+                    <p>서울 02-720-2721 / 성남 031-750-2008,2002 / 대전 042-481-6300 / 부산 051-550-8023 / 광주 062-975-5791</p>
+                    <p>Copyright(c) National Archives of Korea all rights reserved.</p>
+                </address>
+                <div class="footer_logo">
+                    <img src="images/footer_logo.svg" alt="국가기록원 로고" width="131" height="44">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

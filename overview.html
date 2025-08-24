@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="국가기록원 정부간행물 소개 - 간행물의 정의, 유형, 활용방법에 대한 상세 정보를 제공합니다.">
+    <meta name="keywords" content="정부간행물, 국가기록원, 간행물소개, 간행물유형, 공공기관">
+    <meta name="author" content="국가기록원">
+    <meta name="robots" content="index, follow">
+    
+    <title>관보 소개 - 국가기록원</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages/overview.css">
+
+    <script src="assets/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/pages/overview.js"></script>
+</head>
+<body>
+    <!-- 스킵 네비게이션 -->
+    <div id="skip-navigation">
+        <a href="#main-content">본문 바로가기</a>
+        <a href="#main-menu">메인메뉴 바로가기</a>
+        <a href="#gazette-info">간행물 정보 바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+      <header role="banner">
+        <div class="container">
+          <div class="header_logo">
+            <h1>
+              <a href="index.html" aria-label="관보 홈으로 이동">
+                <span class="sr-only">관보</span>
+              </a>
+            </h1>
+          </div>
+          <button class="toggle_btn" aria-label="메인메뉴 열기" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav id="main-menu" role="navigation" aria-label="메인 네비게이션">
+            <div class="mobile_top">
+              <img src="images/logo_b.svg" alt="정부간행물 로고">
+              <button class="close_btn" aria-label="메인메뉴 닫기"></button>
+            </div>
+            <ul>
+              <li class="active"><a href="intro.html" aria-label="간행물 검색 페이지로 이동">간행물</a></li>
+              <li><a href="search.html" aria-label="상세검색 페이지로 이동">상세검색</a></li>
+              <li class="has-submenu">
+                <a href="organList.html" aria-label="발행기관별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">발행기관별 검색</a>
+                <ul class="submenu" aria-label="발행기관별 하위 메뉴">
+                  <li><a href="#">국가행정조직</a></li>
+                  <li><a href="#">자치행정조직</a></li>
+                  <li><a href="#">교육행정조직</a></li>
+                  <li><a href="#">입법조직</a></li>
+                  <li><a href="#">정부투자기관 및 기타</a></li>
+                  <li><a href="#">산하기관</a></li>
+                  <li><a href="#">위원회</a></li>
+                  <li><a href="#">초등학교</a></li>
+                  <li><a href="#">중학교</a></li>
+                  <li><a href="#">고등학교</a></li>
+                  <li><a href="#">고등교육기관</a></li>
+                  <li><a href="#">사법기관</a></li>
+                  <li><a href="#">헌법기관</a></li>
+                  <li><a href="#">미분류</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="type_list.html" aria-label="유형별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">유형별 검색</a>
+                <ul class="submenu" aria-label="유형별 하위 메뉴">
+                  <li><a href="#">연감·백서류</a></li>
+                  <li><a href="#">통계집</a></li>
+                  <li><a href="#">업무편람</a></li>
+                  <li><a href="#">법규집</a></li>
+                  <li><a href="#">사업보고서</a></li>
+                  <li><a href="#">연구조사보고서</a></li>
+                  <li><a href="#">교육자료</a></li>
+                  <li><a href="#">기관지</a></li>
+                  <li><a href="#">회의자료</a></li>
+                  <li><a href="#">목록류</a></li>
+                  <li><a href="#">사료연혁집</a></li>
+                  <li><a href="#">연설·강연집</a></li>
+                  <li><a href="#">전시·도감·화보집</a></li>
+                  <li><a href="#">업무안내질의서</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      </header>
+    
+        <main id="main-content" role="main">
+            <section class="main_section" aria-labelledby="main-title">
+                <nav class="bread_crumb" aria-label="페이지 경로">
+                    <div class="container">
+                        <ol class="bread_crumb_list">
+                            <li>
+                                <a href="index.html"> 
+                                    <img src="images/home.svg" alt="" aria-hidden="true">
+                                    <span class="sr-only">홈</span>
+                                </a>
+                            </li>
+                            <li><a href="intro.html">관보소개</a></li>
+                            <li aria-current="page">개요</li>
+                        </ol>
+                    </div>
+                </nav>
+              <div class="container">
+                <div class="section_top">
+                  <div class="title_section">
+                      <h2 id="main-title">관보 소개</h2>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="gazette_nav">
+                <div class="container">
+                    <ul>
+                        <li class="active"><a href="#;">개요</a></li>
+                        <li><a href="#;">역사</a></li>
+                        <li><a href="#;">소장현황</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </section>
+
+            <section id="gazette-info" class="gazette_section" aria-labelledby="gazette-info-title">
+              <div class="container">
+                <div class="section_bottom"> 
+                    <div class="gazette_info">
+                        <h3 id="gazette-info-title">관보란?</h3>
+                        <div class="content_section">
+                            <p><strong>관보는 자의적으로 보면 관(官)이 발행하는 보(報)로서 정부의 정보를 국민에게 알려주는 뉴스미디어입니다.</strong> 또한 관보는 민간에서 발행하는 뉴스와는 달리 국가의 정보를 국민에게 알리는 목적으로 발행되는 간행물이며, 일회성으로 끝나는 정보가 아닌 단일 제목을 갖고 가장 오랜 기간 발행되고 있는 일종의 정기간행물입니다.</p>                            
+                            <p>관보는 정부와 국민의 가교 역할을 하는 의사소통 수단 중 가장 으뜸이 되는 정보매체라는 중요한 의미를 지니고 있습니다. 그리고 관보의 체제는 법규를 따르게 되어 있어 구성 체제의 변화가 거의 없으며, 그 내용은 발행 당시의 정치, 사회상을 반영한 공문서의 효력을 갖고 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="gazette_timeline">
+                        <h3>관련 법령</h3>
+                        <div class="timeline_wrapper">
+                            <!-- 첫 번째 영역: 1907-1949 -->
+                            <div class="timeline_section">
+                                <div class="timeline_container">
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">12.11</div>
+                                            <div class="timeline_text">「관보 편제에 관한 건」 (각령 제1호)</div>
+                                            <div class="timeline_text">(폐지)</div>
+                                            <div class="timeline_year">1907</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">1.1</div>
+                                            <div class="timeline_text">「관보편제규정」 시행 (폐지)</div>
+                                            <div class="timeline_date">12.11</div>
+                                            <div class="timeline_text">「관보광고규정」 시행 (폐지)</div>
+                                            <div class="timeline_year">1908</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">11.15</div>
+                                            <div class="timeline_text">「관보 편찬 규정」시행 (폐지)</div>
+                                            <div class="timeline_year">1948</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">2.10</div>
+                                            <div class="timeline_text">「관보발매급광고료규정」 시행 (폐지)</div>
+                                            <div class="timeline_year">1949</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline_section">
+                                <div class="timeline_container">
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">9.16</div>
+                                            <div class="timeline_text">「관보 편찬 규정」 (각령 제1호)</div>
+                                            <div class="timeline_text">(폐지)</div>
+                                            <div class="timeline_year">1963</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">2.1</div>
+                                            <div class="timeline_text">「관보규정」 및 「관보규정시행규칙」</div>
+                                            <div class="timeline_text">시행 (폐지)</div>
+                                            <div class="timeline_year">1969</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">6.3</div>
+                                            <div class="timeline_text">「관보의 활용 시행」</div>
+                                            <div class="timeline_text">(국무총리훈령 제30호) (폐지)</div>
+                                            <div class="timeline_year">1970</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline_item">
+                                        <div class="timeline_dot"></div>
+                                        <div class="timeline_content">
+                                            <div class="timeline_date">9.1</div>
+                                            <div class="timeline_text">「관보규정」 및 「관보규정시행규칙」</div>
+                                            <div class="timeline_text">시행 (전부개정) (대통령령 제30008호)</div>
+                                            <div class="timeline_year">2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gazette_classification">
+                        <div class="classification_header">
+                            <h3>관보의 편찬 구분</h3>
+                            <a href="#">국가법령정보센터 바로가기 <img src="images/link.svg" alt="링크 아이콘"></a>
+                        </div>
+                        
+                        <div class="classification_desc">
+                            <p>관보 편찬구분의 규정은 2019년까지 총 7회에 걸쳐 개정되었으며, 자세한 내용은 다음과 같습니다.</p>
+                            <p class="note">※ 2007년 법령 개정 내용은 2003년과 동일하여 제외</p>
+                        </div>
+
+                        <div class="classification_grid">
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보편찬규정 제정</h4>
+                                    <span class="date">(1948.11.15)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 대통령령란</li>
+                                    <li>4. 조약란</li>
+                                    <li>5. 예산란</li>
+                                    <li>6. 총리령란</li>
+                                    <li>7. 부령란</li>
+                                    <li>8. 법원규칙란</li>
+                                    <li>9. 훈령란</li>
+                                    <li>10. 훈시란</li>
+                                    <li>11. 고시란</li>
+                                    <li>12. 공고란</li>
+                                    <li>13. 군사공문란</li>
+                                    <li>14. 통첩란</li>
+                                    <li>15. 국회란</li>
+                                    <li>16. 심계란</li>
+                                    <li>17. 고시란</li>
+                                    <li>18. 지방행정란</li>
+                                    <li>19. 사령란</li>
+                                    <li>20. 휘보란</li>
+                                    <li>21. 광고란</li>
+                                </ul>
+                            </div>
+
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보편찬규정 제정</h4>
+                                    <span class="date">(1963.9.17)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 예산란</li>
+                                    <li>5. 각령</li>
+                                    <li>6. 부령란</li>
+                                    <li>7. 인사규칙란</li>
+                                    <li>8. 훈령란</li>
+                                    <li>9. 고시란</li>
+                                    <li>10. 공고란</li>
+                                    <li>11. 신기란</li>
+                                    <li>12. 상훈란</li>
+                                    <li>13. 국회란</li>
+                                    <li>14. 감사란</li>
+                                    <li>15. 법원란</li>
+                                    <li>16. 지방행정란</li>
+                                    <li>17. 사령란</li>
+                                    <li>18. 광고란</li>
+                                    <li>19. 휘보란</li>
+                                </ul>
+                            </div>
+
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보규정 제정</h4>
+                                    <span class="date">(1969.2.1)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 예산란</li>
+                                    <li>5. 대통령령란</li>
+                                    <li>6. 총리령란</li>
+                                    <li>7. 부령란</li>
+                                    <li>8. 훈령란</li>
+                                    <li>9. 고시란</li>
+                                    <li>10. 공고란</li>
+                                    <li>11. 신기란</li>
+                                    <li>12. 상훈란</li>
+                                    <li>13. 국회란</li>
+                                    <li>14. 법원란</li>
+                                    <li>15. 감사원란</li>
+                                    <li>16. 지방행정란</li>
+                                    <li>17. 사령란</li>
+                                    <li>18. 휘보란</li>
+                                </ul>
+                            </div>
+
+                            <!-- 1999.2.8 -->
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보규정 제정</h4>
+                                    <span class="date">(1999.2.8)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 예산란</li>
+                                    <li>5. 대통령령란</li>
+                                    <li>6. 총리령란</li>
+                                    <li>7. 부령란</li>
+                                    <li>8. 훈령란</li>
+                                    <li>9. 고시란</li>
+                                    <li>10. 공고란</li>
+                                    <li>11. 상훈란</li>
+                                    <li>12. 국회란</li>
+                                    <li>13. 법원란</li>
+                                    <li>14. 헌법재판소란</li>
+                                    <li>14-2. 선거관리위원회란</li>
+                                    <li>15. 지방행정란</li>
+                                    <li>16. 인사란</li>
+                                    <li>17. 기타</li>
+                                </ul>
+                            </div>
+
+                            <!-- 2003.2.11 -->
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보규정 제정</h4>
+                                    <span class="date">(2003.2.11)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 사계란</li>
+                                    <li>5. 대통령령란</li>
+                                    <li>6. 총리령란</li>
+                                    <li>7. 부령란</li>
+                                    <li>8. 훈령란</li>
+                                    <li>9. 고시란</li>
+                                    <li>10. 공고란</li>
+                                    <li>11. 사계란</li>
+                                    <li>12. 국회란</li>
+                                    <li>13. 법원란</li>
+                                    <li>14. 헌법재판소란</li>
+                                    <li>14-2. 선거관리위원회란</li>
+                                    <li>15. 감사원란</li>
+                                    <li>16. 지방자치단체란</li>
+                                    <li>17. 인사란</li>
+                                    <li>18. 기타</li>
+                                </ul>
+                            </div>
+
+                            <!-- 2011.8.3 -->
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보규정 제정</h4>
+                                    <span class="date">(2011.8.3)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 대통령령란</li>
+                                    <li>5. 총리령란</li>
+                                    <li>6. 부령란</li>
+                                    <li>7. 훈령란</li>
+                                    <li>8. 고시란</li>
+                                    <li>9. 공고란</li>
+                                    <li>10. 국회란</li>
+                                    <li>11. 법원란</li>
+                                    <li>12. 헌법재판소란</li>
+                                    <li>13. 선거관리위원회란</li>
+                                    <li>14. 감사원란</li>
+                                    <li>15. 지방자치단체란</li>
+                                    <li>16. 인사란</li>
+                                    <li>17. 기타란</li>
+                                </ul>
+                            </div>
+
+                            <div class="classification_item">
+                                <div class="classification_title">
+                                    <h4>관보규정 제정</h4>
+                                    <span class="date">(2019.8.6)</span>
+                                </div>
+                                <ul class="classification_list">
+                                    <li>1. 헌법란</li>
+                                    <li>2. 법률란</li>
+                                    <li>3. 조약란</li>
+                                    <li>4. 대통령령란</li>
+                                    <li>5. 총리령란</li>
+                                    <li>6. 부령란</li>
+                                    <li>7. 훈령란</li>
+                                    <li>8. 고시란</li>
+                                    <li>9. 공고란</li>
+                                    <li>10. 국회란</li>
+                                    <li>11. 법원란</li>
+                                    <li>12. 헌법재판소란</li>
+                                    <li>13. 선거관리위원회란</li>
+                                    <li>14. 감사원란</li>
+                                    <li>15. 국가인권위원회란</li>
+                                    <li>16. 지방자치단체란</li>
+                                    <li>17. 인사란</li>
+                                    <li>18. 상훈란</li>
+                                    <li>19. 기타란</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="container">
+            <address class="footer_info">
+              <p>(우) 35208 대전광역시 서구 청사로 189, 2동(국가기록원)</p>
+              <p>서울 02-720-2721 / 성남 031-750-2008,2002 / 대전 042-481-6300 / 부산 051-550-8023 / 광주 062-975-5791</p>
+              <p>Copyright(c) National Archives of Korea all rights reserved.</p>
+            </address>
+            <div class="footer_logo">
+              <img src="images/footer_logo.svg" alt="국가기록원 로고" width="131" height="44">
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@charset "utf-8";
+.gazette_section {
+    padding: 6.4rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.gazette_section > .section_bottom {
+    width: 100%;
+    text-align: center;
+}
+.gazette_section .gazette_info + .gazette_info{
+    margin-top: 4.8rem;
+}
+
+.gazette_section .gazette_info h3 {
+    font-size: var(--font-size24);
+    font-weight: var(--font-weight-bold);
+    padding-bottom: 3rem;
+}
+
+.gazette_section .content_section p {
+    font-size: var(--font-size17);
+    word-break: keep-all;
+    color: var(--color-subText1);
+    line-height: 1.5;
+}
+
+.gazette_section .content_section p + p {
+    margin-top: 1.6rem;
+}
+
+.gazette_section .gazette_table {
+    width: 100%;
+}
+
+.gazette_section .gazette_table h3 {
+    font-size: var(--font-size20);
+    font-weight: var(--font-weight-bold);
+    padding-bottom: 3rem;
+}
+
+/* table 스타일 */
+.gazette_table > div + div{
+    margin-top: 2.4rem;
+}
+
+  .gazette_section .gazette_table_content .sub_title{
+    font-size: var(--font-size17);
+    font-weight: var(--font-weight-medium);
+    padding-bottom: 1.6rem;
+  }
+  
+  .gazette_table_wrapper{
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #D4D6D9;
+
+}
+
+.gazette_section .gazette_table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+    color: var(--color-subText1);
+}
+
+.gazette_section .gazette_table table caption {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.gazette_section .gazette_table table thead {
+    background-color: #F7F8FA;
+}
+
+.gazette_section .gazette_table table th {
+    padding: 1.6rem 1.2rem;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    border-right: 1px solid #E0E2E8;
+}
+
+.gazette_section .gazette_table table th:last-child {
+    border-right: none;
+}
+
+.gazette_section .gazette_table table tbody tr {
+    background: #fff;
+    border-top: 1px solid #E0E2E8;
+}
+
+.gazette_section .gazette_table table td {
+    padding: 1.6rem 1.2rem;
+    text-align: center;
+    border-right: 1px solid #E0E2E8;
+}
+
+.gazette_section .gazette_table table td:last-child {
+    border-right: none;
+}
+
+.gazette_section .content_section .link_box{
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+}
+
+.gazette_section .content_section .link_box + .link_box{
+    margin-top: 2.4rem;
+}
+
+.gazette_section .content_section .link_box img{
+    width: auto;
+    height: 66px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+    .gazette_section {
+        padding: 3.2rem 2.4rem;
+        box-sizing: border-box;
+    }
+    
+    .gazette_section .gazette_info h3 {
+    font-size: var(--font-size18);
+    padding-bottom: 1.2rem;
+    }
+    
+    .gazette_section .content_section p {
+        font-size: var(--font-size16);
+    }
+
+    .gazette_section .content_section p + p{
+        margin-top: 4px;
+    }
+
+    .gazette_table > div + div{
+        margin-top: 1.2rem;
+    }
+
+    .gazette_section .gazette_info + .gazette_info{
+        margin-top: 2.4rem;
+    }
+    .gazette_section .gazette_table_content .sub_title{
+        padding-bottom: 1.2rem;
+    }
+    
+    .gazette_section .gazette_table h3 {
+        font-size: var(--font-size17);
+        padding-bottom: 1.2rem;
+        margin-bottom: 0;
+    }
+    
+    .gazette_section .gazette_table_wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .gazette_section .gazette_table table {
+        white-space: nowrap;
+    }
+    
+    .gazette_section .gazette_table table th,
+    .gazette_section .gazette_table table td {
+        padding: 1.2rem 1rem;
+        font-size: var(--font-size15);
+    }
+
+    .gazette_section .content_section .link_box{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap:1.2rem;
+    }
+
+    .gazette_section .content_section .link_box + .link_box{
+        margin-top: 1.6rem;
+    }
+
+    .gazette_section .content_section .link_box img{
+        width: auto;
+        height: 66px;
+        object-fit: contain;
+    }
+}

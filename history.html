@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="국가기록원 정부간행물 소개 - 간행물의 정의, 유형, 활용방법에 대한 상세 정보를 제공합니다.">
+    <meta name="keywords" content="정부간행물, 국가기록원, 간행물소개, 간행물유형, 공공기관">
+    <meta name="author" content="국가기록원">
+    <meta name="robots" content="index, follow">
+    
+    <title>관보 소개 - 국가기록원</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages/history.css">
+
+    <script src="assets/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/pages/history.js"></script>
+</head>
+<body>
+    <!-- 스킵 네비게이션 -->
+    <div id="skip-navigation">
+        <a href="#main-content">본문 바로가기</a>
+        <a href="#main-menu">메인메뉴 바로가기</a>
+        <a href="#gazette-info">간행물 정보 바로가기</a>
+    </div>
+ 
+    <div class="wrap">
+      <header role="banner">
+        <div class="container">
+          <div class="header_logo">
+            <h1>
+              <a href="index(메인).html" aria-label="관보 홈으로 이동">
+                <span class="sr-only">관보</span>
+              </a>
+            </h1>
+          </div>
+          <button class="toggle_btn" aria-label="메인메뉴 열기" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav id="main-menu" role="navigation" aria-label="메인 네비게이션">
+            <div class="mobile_top">
+              <img src="images/logo_b.svg" alt="정부간행물 로고">
+              <button class="close_btn" aria-label="메인메뉴 닫기"></button>
+            </div>
+            <ul>
+              <li class="active"><a href="intro(간행물).html" aria-label="간행물 검색 페이지로 이동">간행물</a></li>
+              <li><a href="search(상세검색).html" aria-label="상세검색 페이지로 이동">상세검색</a></li>
+              <li class="has-submenu">
+                <a href="organList(발행기관별검색).html" aria-label="발행기관별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">발행기관별 검색</a>
+                <ul class="submenu" aria-label="발행기관별 하위 메뉴">
+                  <li><a href="#">국가행정조직</a></li>
+                  <li><a href="#">자치행정조직</a></li>
+                  <li><a href="#">교육행정조직</a></li>
+                  <li><a href="#">입법조직</a></li>
+                  <li><a href="#">정부투자기관 및 기타</a></li>
+                  <li><a href="#">산하기관</a></li>
+                  <li><a href="#">위원회</a></li>
+                  <li><a href="#">초등학교</a></li>
+                  <li><a href="#">중학교</a></li>
+                  <li><a href="#">고등학교</a></li>
+                  <li><a href="#">고등교육기관</a></li>
+                  <li><a href="#">사법기관</a></li>
+                  <li><a href="#">헌법기관</a></li>
+                  <li><a href="#">미분류</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="type_list(유형별 검색).html" aria-label="유형별 검색 페이지로 이동" aria-haspopup="true" aria-expanded="false">유형별 검색</a>
+                <ul class="submenu" aria-label="유형별 하위 메뉴">
+                  <li><a href="#">연감·백서류</a></li>
+                  <li><a href="#">통계집</a></li>
+                  <li><a href="#">업무편람</a></li>
+                  <li><a href="#">법규집</a></li>
+                  <li><a href="#">사업보고서</a></li>
+                  <li><a href="#">연구조사보고서</a></li>
+                  <li><a href="#">교육자료</a></li>
+                  <li><a href="#">기관지</a></li>
+                  <li><a href="#">회의자료</a></li>
+                  <li><a href="#">목록류</a></li>
+                  <li><a href="#">사료연혁집</a></li>
+                  <li><a href="#">연설·강연집</a></li>
+                  <li><a href="#">전시·도감·화보집</a></li>
+                  <li><a href="#">업무안내질의서</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      </header>
+    
+        <main id="main-content" role="main">
+            <section class="main_section" aria-labelledby="main-title">
+                <nav class="bread_crumb" aria-label="페이지 경로">
+                    <div class="container">
+                        <ol class="bread_crumb_list">
+                            <li>
+                                <a href="index(메인).html"> 
+                                    <img src="images/home.svg" alt="" aria-hidden="true">
+                                    <span class="sr-only">홈</span>
+                                </a>
+                            </li>
+                            <li><a href="intro.html">관보소개</a></li>
+                            <li aria-current="page">역사</li>
+                        </ol>
+                    </div>
+                </nav>
+              <div class="container">
+                <div class="section_top">
+                  <div class="title_section">
+                      <h2 id="main-title">관보 소개</h2>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="gazette_nav">
+                <div class="container">
+                    <ul>
+                        <li><a href="">개요</a></li>
+                        <li class="active"><a href="">역사</a></li>
+                        <li><a href="">소장현황</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </section>
+
+            <section id="gazette-info" class="gazette_section" aria-labelledby="gazette-info-title">
+              <div class="container">
+                <div class="section_bottom"> 
+                    <div class="gazette_info">
+                        <h3 id="gazette-info-title">관보의 역사</h3>
+                        <div class="content_section">
+                            <p>
+                                우리나라는 일찍부터 ‘기별’이라는 소식을 전하는 일종의 관보가 있었는데, 고려시대를 거쳐 조선시대에 들어와 이 제도가 더욱 발달하였습니다. 1392년(태조1년) 예문과 춘추관을 설치하고 사관으로 하여금 조정의 결의사항과 견문록을 기록하여 내위 대소관청에 돌리게끔 하는 ‘조보(朝報)’를 발행하였습니다. 근대적 관보는 1894년 6월 21일에 최초로 발간되었는데, 1895년 3월 29일까지는 호수(號數) 표시 없이 발행하다 1895년 4월 1일부터 제1호로 호수를 붙여 발행하기 시작하였습니다. 이때부터 1910년 8월 29일 한일병합 때까지 4,768호가 발행되었습니다.
+                            </p>
+                            
+                            <p>
+                                국권피탈 이후부터 조선총독부에서 관보를 발행하다 1945년 8월 15일 광복 이후, 1948년까지 미군정청에서 관보를 발행하기에 이르렀습니다. 대한민국 정부를 수립한 뒤 1948년 9월 1일자로 공보처가 관보를 다시 창간하였습니다. 정부 수립 직후 관보는 부정기적으로 발행되었으나 1949년 이후로는 일간 또는 격일로 발행되었고, 6.25전쟁 중에는 제대로 발행되지 못하였습니다.
+                            </p>
+                            <p>
+                                1950년대부터는 관보가 자주 호외(號外)의 형식으로 발행되기도 하였는데, 특히 1961년부터 1964년 사이의 호외가 가장 많았습니다. 1970년대 이후로는 호외의 발행이 점점 줄어 1979년부터는 호외 발행이 없었습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gazette_history">
+                        <h3>관보의 형식 변천</h3>
+                        <div class="content_section">
+                            <p>
+                                1948년 대한민국 관보의 창간 이후, 1963년부터 세로쓰기에서 가로쓰기로 형식이 바뀌었고, 1969년부터는 제호(題號) 역시 한자에서 한글로 바뀌었습니다.
+                            </p>
+
+                            <div class="gazette_history_table">
+                                <ul class="gazette_history_list">
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="미군정청 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test1.png" alt="미군정청 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">미군정청 관보</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="1948년 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test2.png" alt="1948년 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">1948년 관보</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="1963년 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test3.png" alt="1963년 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">1963년 관보</span>
+                                            <span class="gazette_history_desc">(세로쓰기에서 가로쓰기로 바뀜)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="1969년 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test4.png" alt="1969년 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">1969년 관보</span>
+                                            <span class="gazette_history_desc">(제호가 한자에서 한글로 바뀜)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="1992년 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test5.png" alt="1992년 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">1982년 관보</span>
+                                            <span class="gazette_history_desc">(최근 관보 유형으로 바뀜)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="gazette_history_link" title="2016년 관보 상세보기">
+                                            <div class="img_box">
+                                                <img src="images/intro/test6.png" alt="2016년 관보 이미지">
+                                                <span class="plus_btn" aria-hidden="true">
+                                                    <img src="images/plus_w.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <span class="gazette_history_year">1963년 관보</span>
+                                            <span class="gazette_history_desc">(전자관보)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gazette_table">
+                      <h3>기관별 관보 발행 정보</h3>
+                      <div class="gazette_table_wrapper">
+                        <table>
+                        <caption class="sr-only">기관별 관보 발행 정보 - 기간, 발행기관, 호수로 구성된 표</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">기간</th>
+                                <th scope="col">발행기관</th>
+                                <th scope="col">호수</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1894.6.21~1895.3.29</td>
+                                <td>의정부 관보국</td>
+                                <td>호수없음</td>
+                            </tr>
+                            <tr>
+                                <td>1895.4.1~</td>
+                                <td>내각기록국 관보과</td>
+                                <td>1~452</td>
+                            </tr>
+                            <tr>
+                                <td>1987.10.13~</td>
+                                <td>정부총보국 관보과</td>
+                                <td>453-3075</td>
+                            </tr>
+                            <tr>
+                                <td>1905.3.2~</td>
+                                <td>의정부 관보과</td>
+                                <td>3076~3793</td>
+                            </tr>
+                            <tr>
+                                <td>1907.6.17~1910.8.29</td>
+                                <td>내각법제국 관보과</td>
+                                <td>3794~4768</td>
+                            </tr>
+                            <tr>
+                                <td>1907.1.14~1910.8.27</td>
+                                <td>조선통감부</td>
+                                <td>1~167</td>
+                            </tr>
+                            <tr>
+                                <td>1910.8.29~1945.8.30</td>
+                                <td>조선총독부</td>
+                                <td>1~5567</td>
+                            </tr>
+                            <tr>
+                                <td>1945.9~1948.8</td>
+                                <td>미 군정청</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1948.9.1~</td>
+                                <td>공보처</td>
+                                <td>1274-2614</td>
+                            </tr>
+                            <tr>
+                                <td>1955.2.17~</td>
+                                <td>공보실</td>
+                                <td>1274-2614</td>
+                            </tr>
+                            <tr>
+                                <td>1955.7.1</td>
+                                <td>국무원 사무처</td>
+                                <td>2615~2859</td>
+                            </tr>
+                            <tr>
+                                <td>1961.5.20~</td>
+                                <td>공보부</td>
+                                <td>2860-5008</td>
+                            </tr>
+                            <tr>
+                                <td>1968.7.26~</td>
+                                <td>총무처</td>
+                                <td>5009~13842</td>
+                            </tr>
+                            <tr>
+                                <td>1998.3.2~</td>
+                                <td>행정자치부,행정안전부</td>
+                                <td>13843~</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="container">
+            <address class="footer_info">
+              <p>(우) 35208 대전광역시 서구 청사로 189, 2동(국가기록원)</p>
+              <p>서울 02-720-2721 / 성남 031-750-2008,2002 / 대전 042-481-6300 / 부산 051-550-8023 / 광주 062-975-5791</p>
+              <p>Copyright(c) National Archives of Korea all rights reserved.</p>
+            </address>
+            <div class="footer_logo">
+              <img src="images/footer_logo.svg" alt="국가기록원 로고" width="131" height="44">
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
