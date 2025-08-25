@@ -191,7 +191,7 @@
 }
 
 .detail_search_section .desc span{
-    color: #D45B50;
+    color: #B91C1C;
     font-size: var(--font-size15);
 }
 
@@ -331,7 +331,7 @@
 }
 .modal.detail_type_modal .guide_list li .guide_text .guide_desc{
     display: block;
-    color: #438CE6;
+    color: #1E40AF;
     font-weight: var(--font-weight-medium);
     margin-bottom: 1.2rem;
 }

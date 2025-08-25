@@ -118,4 +118,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
+
+    // 타임라인 아이템 키보드 접근성 (Enter/Space 키로 활성화)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            const activatable = e.target && e.target.closest && e.target.closest('.timeline-item[role="button"]');
+            if (activatable) {
+                e.preventDefault();
+                // 해당 아이템이 속한 그룹의 인덱스 찾기
+                const group = activatable.closest('.timeline-group');
+                if (group) {
+                    const groupIndex = Array.from(timelineGroups).indexOf(group);
+                    if (groupIndex !== -1) {
+                        currentGroupIndex = groupIndex;
+                        setActiveGroup(currentGroupIndex);
+                        if (isPlaying) {
+                            stopAutoplay();
+                            startAutoplay(); // 재시작
+                        }
+                    }
+                }
+            }
+        }
+    });
   });

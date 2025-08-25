@@ -73,12 +73,13 @@
         </header>
     
         <main id="main-content" role="main">
-            <section aria-labelledby="main-title" class="main_section">
+            <section aria-labelledby="main-title-img" class="main_section" aria-label="관보">
               <div class="container">
                 <div class="section_top">
                   <div class="title_section">
-                      <h2 id="main-title-img">
-                        <img src="images/main_txt.svg" alt="관보">
+                      <h2 id="main-title-img" title="관보">
+                        <img src="images/main_txt.svg" alt="관보" aria-hidden="true">
+                        <span class="sr-only">관보</span>
                       </h2>
                       <p>‘관보’란 정부가 국민들에게 널리 알릴 사항을<br class="mobile"/> 편찬하여 간행하는 국가의 공고기관지입니다.</p>
                   </div>
@@ -86,7 +87,7 @@
                       <form id="search-form" action="#" method="get"> 
                         <div class="search">
                           <div class="search_box">
-                            <select name="" id="search-type">
+                            <select name="" id="search-type" aria-label="검색 유형 선택">
                               <option value="통합검색" selected>통합검색</option>
                               <option value="고시물">고시물</option>
                               <option value="관보호수">관보호수</option>
@@ -107,14 +108,14 @@
               </div>
             </section>
 
-            <section aria-labelledby="related-orgs-title" class="state_section">
+            <section aria-labelledby="related-orgs-title" class="state_section" aria-label="소장 현황">
               <div class="container">
                 <div class="section_bottom"> 
                     <div class="main_state">
                       <div class="state_top">
                         <h3 id="related-orgs-title">소장 현황
                         </h3>
-                        <a href="#;">
+                        <a href="#;" role="button" aria-label="소장 현황 더보기">
                           <img src="images/plus.svg" alt="소장현황 바로가기">
                           <span class="pc">더보기</span>
                         </a>
@@ -134,7 +135,7 @@
                               <div class="timeline-container">
                                 <!-- 그룹 1: 구한국 + 조선총독부 관보 -->
                                 <div class="timeline-group" data-group="0">
-                                  <div class="timeline-item" data-index="0">
+                                  <div class="timeline-item" data-index="0" role="button" tabindex="0" aria-label="구한국 관보 선택">
                                     <div class="timeline-dot active"></div>
                                     <div class="timeline-content">
                                       <div class="timeline-title pc">구한국 관보</div>
@@ -143,7 +144,7 @@
                                     </div>
                                   </div>
                                   
-                                  <div class="timeline-item" data-index="1">
+                                  <div class="timeline-item" data-index="1" role="button" tabindex="0" aria-label="조선총독부 관보 선택">
                                     <div class="timeline-dot active"></div>
                                     <div class="timeline-content">
                                       <div class="timeline-title pc">조선총독부 관보</div>
@@ -155,7 +156,7 @@
 
                                 <!-- 그룹 2: 미군정청 + 대한민국 관보 -->
                                 <div class="timeline-group" data-group="1">
-                                  <div class="timeline-item" data-index="2">
+                                  <div class="timeline-item" data-index="2" role="button" tabindex="0" aria-label="미군정청 관보 선택">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
                                       <div class="timeline-title pc">미군정청 관보</div>
@@ -164,7 +165,7 @@
                                     </div>
                                   </div>
 
-                                  <div class="timeline-item" data-index="3">
+                                  <div class="timeline-item" data-index="3" role="button" tabindex="0" aria-label="대한민국 관보 선택">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
                                       <div class="timeline-title pc">대한민국 관보</div>
@@ -176,7 +177,7 @@
 
                                 <!-- 그룹 3: 전자관보 -->
                                 <div class="timeline-group" data-group="2">
-                                  <div class="timeline-item" data-index="4">
+                                  <div class="timeline-item" data-index="4" role="button" tabindex="0" aria-label="대한민국 전자관보 선택">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
                                       <div class="timeline-title pc">대한민국 전자관보</div>

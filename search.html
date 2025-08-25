@@ -91,14 +91,14 @@
                                     <h3 id="detail-search-title">관보 검색</h3>
                                     <button type="button" class="btn primary" aria-label="도움말 열기" onclick="openTypeDetail()">도움말</button>
                                 </div>
-                                <form id="detail-search-form" class="detail_search_table" role="table" aria-labelledby="detail-search-title" method="post" action="#">
-                                    <div class="detail_search_body" role="rowgroup">
+                                <form id="detail-search-form" class="detail_search_table" aria-labelledby="detail-search-title" method="post" action="#">
+                                    <div class="detail_search_body">
                                         <!-- 키워드 검색 -->
-                                        <div class="detail_search_item" role="row">
-                                            <div class="detail_search_title" role="cell">
+                                        <div class="detail_search_item">
+                                            <div class="detail_search_title">
                                                 <span>키워드</span>
                                             </div>
-                                            <div class="detail_search_content" role="cell">
+                                            <div class="detail_search_content">
                                                 <div class="keyword_search">
                                                     <select name="keyword_field_1" id="keyword-field-1" aria-label="첫 번째 키워드 검색 필드">
                                                         <option value="title">제목</option>
@@ -113,11 +113,11 @@
                                             </div>
                                         </div>
                                         <!-- 발행기관 -->
-                                        <div class="detail_search_item" role="row">
-                                            <div class="detail_search_title" role="cell">
+                                        <div class="detail_search_item">
+                                            <div class="detail_search_title">
                                                 <span>게재의뢰기관</span>
                                             </div>
-                                            <div class="detail_search_content" role="cell">
+                                            <div class="detail_search_content">
                                                 <div class="publication_search">
                                                     <input type="text" name="publication_org" placeholder="기관명을 입력하거나 선택해주세요." aria-label="발행기관명 입력">
                                                     <button type="button" class="btn border_primary" aria-label="발행기관 검색 실행" onclick="openSearch()">
@@ -128,11 +128,11 @@
                                             </div>
                                         </div>
                                         <!-- 발행연도 -->
-                                        <div class="detail_search_item" role="row">
-                                            <div class="detail_search_title" role="cell">
+                                        <div class="detail_search_item">
+                                            <div class="detail_search_title">
                                                 <span>발행날짜</span>
                                             </div>
-                                            <div class="detail_search_content" role="cell">
+                                            <div class="detail_search_content">
                                                 <div class="year_search">
                                                     <input type="text" name="year_start" aria-label="발행연도 시작년도">
                                                     <span class="symbol" aria-label="부터">~</span>
@@ -144,11 +144,11 @@
                                             </div>
                                         </div>
                                         <!-- 공개구분 -->
-                                        <div class="detail_search_item" role="row">
-                                            <div class="detail_search_title" role="cell">
+                                        <div class="detail_search_item">
+                                            <div class="detail_search_title">
                                                 <span>관보종류</span>
                                             </div>
-                                            <div class="detail_search_content" role="cell">
+                                            <div class="detail_search_content">
                                                 <div class="type_radio">
                                                     <ul class="type_radio_list">
                                                         <li>
@@ -184,11 +184,11 @@
                                             </div>
                                         </div>
                                         <!-- 간행물 유형 -->
-                                        <div class="detail_search_item" role="row">
-                                            <div class="detail_search_title" role="cell">
+                                        <div class="detail_search_item">
+                                            <div class="detail_search_title">
                                                 <span>편찬구분</span>
                                             </div>
-                                            <div class="detail_search_content" role="cell">
+                                            <div class="detail_search_content">
                                                 <div class="type_checkbox">
                                                     <ul>
                                                         <li>
@@ -355,17 +355,17 @@
     </div>
 
     <!-- 간행물 유형 모달 -->
-    <div class="modal detail_type_modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal detail_type_modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="detail-type-modal-title">
         <div class="modal_content">
             <div class="modal_header">
-                <h3 id="modal-title">도움말</h3>
+                <h3 id="detail-type-modal-title">도움말</h3>
                 <button type="button" class="btn close" onclick="closeTypeDetail()" aria-label="모달 닫기"></button>
             </div>
             <div class="modal_body">
                 <div class="modal_body_content">
                     <div class="search_guide">
                         <h4 class="guide_title">검색어 입력방법</h4>
-                        <ul class="guide_list">
+                        <ul class="guide_list" role="presentation" aria-hidden="true">
                             <li class="guide_item">
                                 <div class="guide_text">
                                     <p>단어와 단어를 조합하여 정확한 검색을 하고 싶을 때</p>
@@ -421,17 +421,17 @@
         </div>
     </div>
 
-    <div class="modal search_modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal search_modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
         <div class="modal_content">
             <div class="modal_header">
-                <h3 id="modal-title">기관 검색</h3>
+                <h3 id="search-modal-title">기관 검색</h3>
                 <button type="button" class="btn close" onclick="closeSearch()" aria-label="모달 닫기"></button>
             </div>
             <div class="modal_body">
                 <div class="modal_body_content">
                     <div class="search_content">
                         <div class="search_input">
-                            <input type="text" name="organ_search" id="organ_search" placeholder="기관명을 입력해주세요.">
+                            <input type="text" name="organ_search" id="organ_search" placeholder="기관명을 입력해주세요." aria-label="기관명 검색어 입력">
                             <button type="button" class="btn" aria-label="검색">
                                 <img src="images/search.svg" alt="검색">
                             </button>

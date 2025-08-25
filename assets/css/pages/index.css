@@ -283,6 +283,7 @@ header{
   
   .timeline-period {
     font-size: var(--font-size-15);
+    font-weight: var(--font-weight-bold);
     color: var(--color-primary);
     text-align: center;
     height: 42px;
@@ -343,11 +344,6 @@ header{
     line-height: 2.3rem;
     margin-top: 2.4rem;
   }
-  
-  .state_info strong {
-    color: #007bff;
-    font-weight: bold;
-  }
 
 @media (max-width: 1024px) {
     /* 메인 */
@@ -398,6 +394,7 @@ header{
 
     .timeline-period{
         font-size: 1.5rem;
+        color: var(--color-primary);
     }
     
     .timeline-group[data-group="0"] {
